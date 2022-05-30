@@ -41,7 +41,7 @@ a {
 }
 
 .first-page-block {
-    padding-bottom: 50px 0;
+    padding-bottom: 50px;
 }
 
 .page-block {
@@ -127,7 +127,6 @@ a {
 
 /* ---------------START-------------HEADER------------------ */
 .header {
-    background-color: black;
     position: sticky;
     z-index: 10;
     top: 0;
@@ -140,6 +139,8 @@ a {
     align-items: center;
     min-height: 60px;
     padding: 8px 15px;
+    background-color: #222222;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .header__logo {
@@ -216,14 +217,24 @@ a {
 
 /* ---------------START-------------SLIDER------------------ */
 .slider-background {
+    position: relative;
     max-width: 1440px;
     margin: 0 auto;
-    background-image: url(http://placehold.jp/322f2f/000000/300x200.png);
+    background-color: black;
+    
 }
 
-.slider-background__cover {
+.slider-background__img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    backdrop-filter: blur(6px);
+    height: 100%;
+    background-image: url(http://placehold.jp/1440x496.png);
+    background-size: contain;
+    filter: blur(6px);
+    opacity: 0.25;
+    
 }
 
 .slider {
